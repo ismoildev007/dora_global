@@ -85,33 +85,17 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-4">
-                        <div class="serv-item md-mb50 radius-10">
-                            <div class="icon-img-60 mb-40">
-                                <img src="/front/assets/imgs/serv-icons/0.png" alt="">
+                    @foreach($services as $servc)
+                        <div class="col-lg-4">
+                            <div class="serv-item md-mb50 radius-10">
+                                <div class="icon-img-60 mb-40">
+                                    <img src="{{ asset('storage/) . $servc->image' }}" alt="">
+                                </div>
+                                <h5 class="mb-30 pb-30 bord-thin-bottom">{{ $servc->title }}</h5>
+                                <p>{{ $servc->description }}</p>
                             </div>
-                            <h5 class="mb-30 pb-30 bord-thin-bottom">Brand Strategy & <br> Art Direction</h5>
-                            <p>Creating a higher spacing and how people move through a unique.</p>
                         </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="serv-item md-mb50 radius-10">
-                            <div class="icon-img-60 mb-40">
-                                <img src="/front/assets/imgs/serv-icons/1.png" alt="">
-                            </div>
-                            <h5 class="mb-30 pb-30 bord-thin-bottom">UX/UI Design & <br> Website/App Design</h5>
-                            <p>Creating a higher spacing and how people move through a unique.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="serv-item radius-10">
-                            <div class="icon-img-60 mb-40">
-                                <img src="/front/assets/imgs/serv-icons/2.png" alt="">
-                            </div>
-                            <h5 class="mb-30 pb-30 bord-thin-bottom">Typography & <br> Video Production</h5>
-                            <p>Creating a higher spacing and how people move through a unique.</p>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </section>
