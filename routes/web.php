@@ -1,5 +1,12 @@
 <?php
 
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\BlogController;
+use App\Http\Controllers\BrendController;
+use App\Http\Controllers\MainController;
+use App\Http\Controllers\PortfolioController;
+use App\Http\Controllers\ServiceController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,9 +20,21 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('/solo', function () {
-    return view('admin.admin');
+
+
+Route::get('/', [MainController::class, 'index'])->name('index');
+
+
+Route::get('/login', [AuthController::class, 'login'])->name('login');
+Route::post('authenticate', [AuthController::class, 'authenticate'])->name('authenticate');
+
+Route::middleware(['checkRole:admin', 'auth'])->group(function () {
+    Route::group(['prefix' => 'admin'], function () {
+        Route::get('/dashboard', [AdminController::class, 'admin'])->name('admin');
+        Route::resource('/service', ServiceController::class);
+        Route::resource('/blog', BlogController::class);
+        Route::resource('/brand', BrendController::class);
+        Route::resource('/portfolio', PortfolioController::class);
+        Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
+    });
 });

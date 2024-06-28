@@ -1,3 +1,3 @@
 <x-layouts.admin>
-    <h1>Portfolio</h1>
+    <h1>Brend</h1>
 </x-layouts.admin>

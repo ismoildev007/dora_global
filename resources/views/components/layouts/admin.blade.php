@@ -1132,50 +1132,13 @@
 
                 <li class="nav-author">
                     <div class="dropdown-custom">
-                        <a href="javascript:;" class="nav-item-toggle"><img src="img/author-nav.jpg" alt="" class="rounded-circle">
-                            <span class="nav-item__title">Danial<i class="las la-angle-down nav-item__arrow"></i></span>
-                        </a>
-                        <div class="dropdown-parent-wrapper">
-                            <div class="dropdown-wrapper">
-                                <div class="nav-author__info">
-                                    <div class="author-img">
-                                        <img src="img/author-nav.jpg" alt="" class="rounded-circle">
-                                    </div>
-                                    <div>
-                                        <h6>Rabbi Islam Rony</h6>
-                                        <span>UI Designer</span>
-                                    </div>
-                                </div>
-                                <div class="nav-author__options">
-                                    <ul>
-                                        <li>
-                                            <a href="">
-                                                <i class="uil uil-user"></i> Profile</a>
-                                        </li>
-                                        <li>
-                                            <a href="">
-                                                <i class="uil uil-setting"></i>
-                                                Settings</a>
-                                        </li>
-                                        <li>
-                                            <a href="">
-                                                <i class="uil uil-key-skeleton"></i> Billing</a>
-                                        </li>
-                                        <li>
-                                            <a href="">
-                                                <i class="uil uil-users-alt"></i> Activity</a>
-                                        </li>
-                                        <li>
-                                            <a href="">
-                                                <i class="uil uil-bell"></i> Help</a>
-                                        </li>
-                                    </ul>
-                                    <a href="" class="nav-author__signout">
-                                        <i class="uil uil-sign-out-alt"></i> Sign Out</a>
-                                </div>
-                            </div>
-                            <!-- ends: .dropdown-wrapper -->
-                        </div>
+                        <form method="post" action="{{ route('logout') }}">
+                            <i class="fe-log-out"></i>
+                            <span>
+                                    @csrf
+                                    <button class="btn btn-danger">Chiqish</button>
+                                </span>
+                        </form>
                     </div>
                 </li>
                 <!-- ends: .nav-author -->
