@@ -34,6 +34,7 @@ class BlogController extends Controller
         $validated = $request->validate([
             'title' => 'nullable|string|max:255',
             'description' => 'nullable|string',
+            'date' => 'nullable|string',
             'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg,webp|max:2048',
         ]);
 
@@ -61,7 +62,7 @@ class BlogController extends Controller
      */
     public function edit(Blog $blog)
     {
-        return view('admin.information.edit', compact('blog'));
+        return view('admin.blog.edit', compact('blog'));
     }
 
 
@@ -73,6 +74,7 @@ class BlogController extends Controller
         $validated = $request->validate([
             'title' => 'nullable|string|max:255',
             'description' => 'nullable|string',
+            'date' => 'nullable|string',
             'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg,webp|max:2048',
         ]);
 

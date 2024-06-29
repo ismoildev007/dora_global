@@ -75,7 +75,7 @@ class PortfolioController extends Controller
     public function edit(Portfolio $portfolio)
     {
         $categories = Brend::all(); // Need to pass categories to the view
-        return view('admin.information.edit', compact('portfolio', 'categories'));
+        return view('admin.portfolio.edit', compact('portfolio', 'categories'));
     }
 
 

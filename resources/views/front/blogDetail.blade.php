@@ -1,293 +1,500 @@
-<x-layouts.main>
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+
+    <!-- Metas -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Разработка сайтов, СММ продвижение, Создание сайтов, Продвижение соц сетях, Разработка интернет магазинов в ташкенте, разработка логотипов в ташкенте, разработка телеграм ботов, создание телеграм ботов, брендинг в ташкенте, сео продвижение, seo продвижение сайтов в ташкенте, контекстная реклама, срм системы в ташкенте, программа для автоматизации, битрикс24, разработчики сайтов, рекламные ролики, видеосъемка в ташкенте, рекламные компании, веб студия, онлайн реклама, нейминг в ташкенте, разработка мобильных приложении, amocrm, амосрм, мой склад, складской учет, программа для торговли">
+    <meta name="description" content="Creation of sites in Tashkent. SEO promotion. Digital marketing with guaranteed results! Internet marketing from a certified Google partner. DORA">
+    <meta name="author" content="DORA® | International Marketing Company">
+
+    <!-- Title  -->
+    <title>DORA® | International Marketing Company</title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/imgs/fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/imgs/fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/imgs/fav/favicon-16x16.png">
+    <link rel="manifest" href="assets/imgs/fav/site.webmanifest">
+    <link rel="mask-icon" href="assets/imgs/fav/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+
+    <!-- Google Fonts -->
+    <link href="../../../css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="../../../css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="../../../css2-1?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link href="../../../css2-2?family=Epilogue:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Plugins -->
+    <link rel="stylesheet" href="assets/css/plugins.css">
+
+    <!-- Core Style Css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body class="main-bg">
+
+
+
+<!-- ==================== Start Loading ==================== -->
+
+<div class="loader-wrap">
+    <svg viewbox="0 0 1000 1000" preserveaspectratio="none">
+        <path id="svg" d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"></path>
+    </svg>
+
+    <div class="loader-wrap-heading">
+        <div class="load-text">
+            <span>L</span>
+            <span>o</span>
+            <span>a</span>
+            <span>d</span>
+            <span>i</span>
+            <span>n</span>
+            <span>g</span>
+        </div>
+    </div>
+</div>
+
+<!-- ==================== End Loading ==================== -->
+
+
+<div class="cursor"></div>
+
+
+<!-- ==================== Start progress-scroll-button ==================== -->
+
+<div class="progress-wrap cursor-pointer">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewbox="-1 -1 102 102">
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
+    </svg>
+</div>
+
+<!-- ==================== End progress-scroll-button ==================== -->
+
+
+
+<!-- ==================== Start Navbar ==================== -->
+
+<nav class="navbar navbar-expand-lg bord main-bg">
+    <div class="container">
+
+        <!-- Logo -->
+        <a class="logo icon-img-100" href="/">
+            <img src="assets/imgs/logo-dark.png" alt="logo">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="icon-bar"><i class="fas fa-bars"></i></span>
+        </button>
+
+        <!-- navbar links -->
+        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/"><span class="rolling-text">Home</span></a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><span class="rolling-text">DORA®</span></a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="{{route('about')}}">About</a>
+                        <a class="dropdown-item" href="{{route('about')}}">Mission</a>
+                        <a class="dropdown-item" href="{{route('partnerships')}}">Partners</a>
+                        <a class="dropdown-item" href="{{'portfolio'}}l">Our Team</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="{{route('services')}}"><span class="rolling-text">Services</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{route('portfolio')}}"><span class="rolling-text">Portfolio</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{route('blog')}}"><span class="rolling-text">Blog</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{route('contact')}}"><span class="rolling-text">Contact</span></a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="search-form">
+            <div class="form-group">
+                <input type="text" name="search" placeholder="Search">
+                <button><span class="pe-7s-search"></span></button>
+            </div>
+            <div class="search-icon">
+                <span class="pe-7s-search open-search"></span>
+                <span class="pe-7s-close close-search"></span>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- ==================== End Navbar ==================== -->
+
 <main>
 
-        <!-- ==================== Start Slider ==================== -->
+    <!-- ==================== Start Slider ==================== -->
 
-        <header class="page-header blog-header section-padding pb-0">
-            <div class="container mt-80">
-                <div class="row justify-content-center">
-                    <div class="col-lg-10">
-                        <div class="caption">
-                            <div class="sub-title fz-12">
-                                <a href="#0"><span>DORA®</span></a>
-                            </div>
-                            <h1 class="fz-55 mt-30">Network of wormholes colonies extraordinary claims require.</h1>
+    <header class="page-header blog-header section-padding pb-0">
+        <div class="container mt-80">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="caption">
+                        <div class="sub-title fz-12">
+                            <a href="#0"><span>DORA®</span></a>
                         </div>
-                        <div class="info d-flex mt-40 align-items-center">
-                            <div class="left-info">
-                                <div class="d-flex">
-                                    <div class="author-info">
-                                        <div class="d-flex align-items-center">
-                                            <a href="#0" class="circle-60">
-                                                <img src="/front/assets/imgs/blog/author1.jpg" alt="" class="circle-img">
-                                            </a>
-                                            <a href="#0" class="ml-20">
-                                                <span class="opacity-7">Author</span>
-                                                <h6 class="fz-16">Ui-ThemeZ</h6>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="date ml-50">
-                                        <a href="#0">
-                                            <span class="opacity-7">Published</span>
-                                            <h6 class="fz-16">August 6, 2021</h6>
+                        <h1 class="fz-55 mt-30">Network of wormholes colonies extraordinary claims require.</h1>
+                    </div>
+                    <div class="info d-flex mt-40 align-items-center">
+                        <div class="left-info">
+                            <div class="d-flex">
+                                <div class="author-info">
+                                    <div class="d-flex align-items-center">
+                                        <a href="#0" class="circle-60">
+                                            <img src="assets/imgs/blog/author1.jpg" alt="" class="circle-img">
+                                        </a>
+                                        <a href="#0" class="ml-20">
+                                            <span class="opacity-7">Author</span>
+                                            <h6 class="fz-16">Ui-ThemeZ</h6>
                                         </a>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="right-info ml-auto">
-                                <div>
-                                    <span class="pe-7s-comment fz-18 mr-10"></span>
-                                    <span class="opacity-7">02 Comments</span>
+                                <div class="date ml-50">
+                                    <a href="#0">
+                                        <span class="opacity-7">Published</span>
+                                        <h6 class="fz-16">August 6, 2021</h6>
+                                    </a>
                                 </div>
+                            </div>
+                        </div>
+                        <div class="right-info ml-auto">
+                            <div>
+                                <span class="pe-7s-comment fz-18 mr-10"></span>
+                                <span class="opacity-7">02 Comments</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="background bg-img parallaxie mt-80" data-background="https://uithemez.com/i/geekfolio/dark/assets/imgs/blog/b2.jpg"></div>
-        </header>
+        </div>
+        <div class="background bg-img parallaxie mt-80" data-background="https://uithemez.com/i/geekfolio/dark/assets/imgs/blog/b2.jpg"></div>
+    </header>
 
-        <!-- ==================== End Slider ==================== -->
+    <!-- ==================== End Slider ==================== -->
 
 
 
-        <!-- ==================== Start Blog ==================== -->
+    <!-- ==================== Start Blog ==================== -->
 
-        <section class="blog section-padding pb-0">
-            <div class="container">
-                <div class="main-post">
-                    <div class="item pb-60">
-                        <div>
-                            <div class="row justify-content-center">
-                                <div class="col-lg-10">
-                                    <div class="text">
-                                        <div class="d-flex align-items-center">
-                                            <span class="fz-60 fw-600 main-color line-height-1 mr-10">A</span>
-                                            <p>new report said earlier this week that Apple is working on a brand new laptop. A trusted Apple insider with a proven track record confirmed that Apple is working on the larger MacBook Air.</p>
-                                        </div>
-                                        <p>new report said earlier this week that Apple is working on a brand
-                                            new laptop.
-                                            Apple plans to release a 15-inch MacBook Air in 2023, a first for
-                                            the Air
-                                            series. A trusted Apple insider with a proven track record confirmed
-                                            that Apple
-                                            is working on the larger MacBook Air.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row justify-content-center">
-                                <div class="col-lg-10">
-                                    <div class="text">
-                                        <p>However, Apple might not include it in the Air series when it
-                                            launches it. As for
-                                            the notebook’s release date, the 15-inch MacBook isn’t coming soon.
-                                            It’ll get a
-                                            late 2023 release at best, according to the new claims.</p>
-                                    </div>
-                                    <div class="title mt-30">
-                                        <h5 class="fw-600">What sizes do MacBook Airs come in?</h5>
-                                    </div>
-                                    <div class="text mt-20">
-                                        <p>Apple currently sells only one MacBook Air size. The laptop comes in
-                                            a 13-inch
-                                            version that matches the pre-2021 13-inch MacBook Pro size.
-                                            Previously, Apple
-                                            sold an 11-inch MacBook Air, but the company discontinued that model
-                                            in 2017.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
+    <section class="blog section-padding pb-0">
+        <div class="container">
+            <div class="main-post">
+                <div class="item pb-60">
+                    <div>
                         <div class="row justify-content-center">
                             <div class="col-lg-10">
-                                <div class="post-qoute mt-50">
-                                    <h6 class="fz-20">
-                                        <span class="l-block">Increase your site traffic and gain new customers
-                                            with a beautiful
-                                            and
-                                            functional blog.</span>
-                                        <span class="sub-title main-color mt-20 mb-0"> - Ui-ThemeZ
-                                            Universe</span>
-                                    </h6>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="mb-50 mt-50">
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="iner-img sm-mb30">
-                                        <img src="/front/assets/imgs/blog/b2.jpg" alt="">
+                                <div class="text">
+                                    <div class="d-flex align-items-center">
+                                        <span class="fz-60 fw-600 main-color line-height-1 mr-10">A</span>
+                                        <p>new report said earlier this week that Apple is working on a brand new laptop. A trusted Apple insider with a proven track record confirmed that Apple is working on the larger MacBook Air.</p>
                                     </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="iner-img">
-                                        <img src="/front/assets/imgs/blog/b3.jpg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row justify-content-center">
-                            <div class="col-lg-10">
-                                <div class="title mb-10">
-                                    <h5 class="fw-600">Apple currently sells only one MacBook Air size.</h5>
-                                </div>
-
-                                <div class="text mb-20">
-                                    <p>A new report said earlier this week that Apple is working on a brand new
-                                        laptop.
-                                        Apple plans to release a 15-inch MacBook Air in 2023, a first for the
-                                        Air
+                                    <p>new report said earlier this week that Apple is working on a brand
+                                        new laptop.
+                                        Apple plans to release a 15-inch MacBook Air in 2023, a first for
+                                        the Air
                                         series. A trusted Apple insider with a proven track record confirmed
                                         that Apple
                                         is working on the larger MacBook Air.</p>
                                 </div>
-
-                                <div class="unorder-list mb-30">
-                                    <h6 class="mb-10">Ordered & Unordered Lists.</h6>
-                                    <ul class="rest">
-                                        <li>Yet this above sewed flirted opened ouch</li>
-                                        <li>Goldfinch realistic sporadic ingenuous</li>
-                                        <li>Abominable this abidin far successfully then like piquan</li>
-                                    </ul>
-                                </div>
-
-                                <div class="order-list mb-30">
-                                    <h6 class="mb-10">Ordered & Unordered Lists.</h6>
-                                    <ul class="rest">
-                                        <li><span>01 -</span> Yet this above sewed flirted opened ouch</li>
-                                        <li><span>02 -</span> Goldfinch realistic sporadic ingenuous</li>
-                                        <li><span>03 -</span> Abominable this abidin far successfully then like
-                                            piquan
-                                        </li>
-                                    </ul>
-                                </div>
-
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-lg-10">
                                 <div class="text">
-                                    <p>However, Apple might not include it in the Air series when it launches
-                                        it. As for
+                                    <p>However, Apple might not include it in the Air series when it
+                                        launches it. As for
                                         the notebook’s release date, the 15-inch MacBook isn’t coming soon.
                                         It’ll get a
                                         late 2023 release at best, according to the new claims.</p>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info-area flex mt-20 pb-20">
-                        <div>
-                            <div class="tags flex">
-                                <div class="valign">
-                                    <span>Tags :</span>
+                                <div class="title mt-30">
+                                    <h5 class="fw-600">What sizes do MacBook Airs come in?</h5>
                                 </div>
-                                <div>
-                                    <a href="blog-classic.html">Tech</a>
-                                    <a href="blog-classic.html">Ravo</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="ml-auto">
-                            <div class="share-icon flex">
-                                <div class="valign">
-                                    <span>Share :</span>
-                                </div>
-                                <div>
-                                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
-                                    <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                                <div class="text mt-20">
+                                    <p>Apple currently sells only one MacBook Air size. The laptop comes in
+                                        a 13-inch
+                                        version that matches the pre-2021 13-inch MacBook Pro size.
+                                        Previously, Apple
+                                        sold an 11-inch MacBook Air, but the company discontinued that model
+                                        in 2017.
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="author-area mt-50">
-                        <div class="flex">
-                            <div class="author-img mr-30">
-                                <div class="img">
-                                    <img src="/front/assets/imgs/blog/author1.jpg" alt="" class="circle-img">
+
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10">
+                            <div class="post-qoute mt-50">
+                                <h6 class="fz-20">
+                                        <span class="l-block">Increase your site traffic and gain new customers
+                                            with a beautiful
+                                            and
+                                            functional blog.</span>
+                                    <span class="sub-title main-color mt-20 mb-0"> - Ui-ThemeZ
+                                            Universe</span>
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-50 mt-50">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="iner-img sm-mb30">
+                                    <img src="assets/imgs/blog/b2.jpg" alt="">
                                 </div>
                             </div>
-                            <div class="cont valign">
-                                <div class="full-width">
-                                    <h6 class="fw-600 mb-10">Chris Smith</h6>
-                                    <p>Nulla eleifend, lectus eu gravida facilisis, ipsum metus faucibus eros,
-                                        vitae vulputate nibh libero ac metus.</p>
+                            <div class="col-sm-6">
+                                <div class="iner-img">
+                                    <img src="assets/imgs/blog/b3.jpg" alt="">
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="next-prv-post flex mt-50">
-                        <div class="thumb-post bg-img" data-background="/front/assets/imgs/blog/b2.jpg">
-                            <a href="blog-details.html">
+
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10">
+                            <div class="title mb-10">
+                                <h5 class="fw-600">Apple currently sells only one MacBook Air size.</h5>
+                            </div>
+
+                            <div class="text mb-20">
+                                <p>A new report said earlier this week that Apple is working on a brand new
+                                    laptop.
+                                    Apple plans to release a 15-inch MacBook Air in 2023, a first for the
+                                    Air
+                                    series. A trusted Apple insider with a proven track record confirmed
+                                    that Apple
+                                    is working on the larger MacBook Air.</p>
+                            </div>
+
+                            <div class="unorder-list mb-30">
+                                <h6 class="mb-10">Ordered & Unordered Lists.</h6>
+                                <ul class="rest">
+                                    <li>Yet this above sewed flirted opened ouch</li>
+                                    <li>Goldfinch realistic sporadic ingenuous</li>
+                                    <li>Abominable this abidin far successfully then like piquan</li>
+                                </ul>
+                            </div>
+
+                            <div class="order-list mb-30">
+                                <h6 class="mb-10">Ordered & Unordered Lists.</h6>
+                                <ul class="rest">
+                                    <li><span>01 -</span> Yet this above sewed flirted opened ouch</li>
+                                    <li><span>02 -</span> Goldfinch realistic sporadic ingenuous</li>
+                                    <li><span>03 -</span> Abominable this abidin far successfully then like
+                                        piquan
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="text">
+                                <p>However, Apple might not include it in the Air series when it launches
+                                    it. As for
+                                    the notebook’s release date, the 15-inch MacBook isn’t coming soon.
+                                    It’ll get a
+                                    late 2023 release at best, according to the new claims.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-area flex mt-20 pb-20">
+                    <div>
+                        <div class="tags flex">
+                            <div class="valign">
+                                <span>Tags :</span>
+                            </div>
+                            <div>
+                                <a href="blog-classic.html">Tech</a>
+                                <a href="blog-classic.html">Ravo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ml-auto">
+                        <div class="share-icon flex">
+                            <div class="valign">
+                                <span>Share :</span>
+                            </div>
+                            <div>
+                                <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+                                <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="author-area mt-50">
+                    <div class="flex">
+                        <div class="author-img mr-30">
+                            <div class="img">
+                                <img src="assets/imgs/blog/author1.jpg" alt="" class="circle-img">
+                            </div>
+                        </div>
+                        <div class="cont valign">
+                            <div class="full-width">
+                                <h6 class="fw-600 mb-10">Chris Smith</h6>
+                                <p>Nulla eleifend, lectus eu gravida facilisis, ipsum metus faucibus eros,
+                                    vitae vulputate nibh libero ac metus.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="next-prv-post flex mt-50">
+                    <div class="thumb-post bg-img" data-background="assets/imgs/blog/b2.jpg">
+                        <a href="blog-details.html">
                                 <span class="fz-12 text-u ls1 main-color mb-15"><i class="pe-7s-angle-left"></i>
                                     Prev Post</span>
-                                <h6 class="fw-600 fz-16">Ways to quickly traffic to <br> your website.</h6>
-                            </a>
+                            <h6 class="fw-600 fz-16">Ways to quickly traffic to <br> your website.</h6>
+                        </a>
+                    </div>
+                    <div class="thumb-post ml-auto text-right bg-img" data-background="assets/imgs/blog/b3.jpg">
+                        <a href="blog-details.html">
+                            <span class="fz-12 text-u ls1 main-color mb-15">Next Post <i class="pe-7s-angle-right"></i></span>
+                            <h6 class="fw-600 fz-16">How to Handle Your Good Employee.</h6>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="recent-posts blog-list-half crev sub-bg section-padding mt-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="mb-60">
+                            <h3>Recent Posts</h3>
                         </div>
-                        <div class="thumb-post ml-auto text-right bg-img" data-background="/front/assets/imgs/blog/b3.jpg">
-                            <a href="blog-details.html">
-                                <span class="fz-12 text-u ls1 main-color mb-15">Next Post <i class="pe-7s-angle-right"></i></span>
-                                <h6 class="fw-600 fz-16">How to Handle Your Good Employee.</h6>
-                            </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 md-mb50">
+                        <div class="item mb-30">
+                            <div class="row rest">
+                                <div class="col-md-6">
+                                    <div class="img">
+                                        <img src="assets/imgs/blog/h5.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 valign">
+                                    <div class="cont">
+                                        <span class="date fz-12 ls1 text-u opacity-7 mb-15">August 6, 2022</span>
+                                        <h5>
+                                            <a href="#0">Free advertising for your online business.</a>
+                                        </h5>
+                                        <div class="tags colorbg mt-15">
+                                            <a href="#0">Marketing</a>
+                                            <a href="#0">Design</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="item mb-30">
+                            <div class="row rest">
+                                <div class="col-md-6">
+                                    <div class="img">
+                                        <img src="assets/imgs/blog/h6.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 valign">
+                                    <div class="cont">
+                                        <span class="date fz-12 ls1 text-u opacity-7 mb-15">August 6, 2022</span>
+                                        <h5>
+                                            <a href="#0">Business meeting 2023 in San Francisco.</a>
+                                        </h5>
+                                        <div class="tags colorbg mt-15">
+                                            <a href="#0">Marketing</a>
+                                            <a href="#0">Design</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <div class="recent-posts blog-list-half crev sub-bg section-padding mt-100">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="mb-60">
-                                <h3>Recent Posts</h3>
-                            </div>
+        <div class="comments-post section-padding">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-11">
+                        <div class="text mb-60">
+                            <h3>Comments</h3>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-lg-6 md-mb50">
-                            <div class="item mb-30">
-                                <div class="row rest">
-                                    <div class="col-md-6">
-                                        <div class="img">
-                                            <img src="/front/assets/imgs/blog/h5.jpg" alt="">
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-11">
+                        <div class="item-box">
+                            <div class="row">
+                                <div class="col-lg-9">
+                                    <div class="flex">
+                                        <div class="user-img mr-30">
+                                            <div class="img circle-80 line-height-1">
+                                                <img src="assets/imgs/blog/author1.jpg" alt="" class="circle-img">
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-md-6 valign">
                                         <div class="cont">
-                                            <span class="date fz-12 ls1 text-u opacity-7 mb-15">August 6, 2022</span>
-                                            <h5>
-                                                <a href="#0">Free advertising for your online business.</a>
-                                            </h5>
-                                            <div class="tags colorbg mt-15">
-                                                <a href="#0">Marketing</a>
-                                                <a href="#0">Design</a>
-                                            </div>
+                                            <h6 class="line-height-1">Megan fox</h6>
+                                            <span class="fz-12 ls1 text-u mb-15">14 sept 2021, 07:00 AM</span>
+                                            <p class="fz-14">Ut elementum turpis lorem, id vulputate risus consequat vitae. Morbi eget
+                                                urna imperdiet, pellentesque nulla id, tempus mauris.</p>
                                         </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 d-flex align-items-center">
+                                    <div class="replay-post ml-auto">
+                                        <a href="#0">
+                                            <span>Replay</span>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6">
-                            <div class="item mb-30">
-                                <div class="row rest">
-                                    <div class="col-md-6">
-                                        <div class="img">
-                                            <img src="/front/assets/imgs/blog/h6.jpg" alt="">
+                        <div class="item-box replayed">
+                            <div class="row">
+                                <div class="col-lg-9">
+                                    <div class="flex">
+                                        <div class="user-img mr-30">
+                                            <div class="img circle-80 line-height-1">
+                                                <img src="assets/imgs/blog/author1.jpg" alt="" class="circle-img">
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-md-6 valign">
                                         <div class="cont">
-                                            <span class="date fz-12 ls1 text-u opacity-7 mb-15">August 6, 2022</span>
-                                            <h5>
-                                                <a href="#0">Business meeting 2023 in San Francisco.</a>
-                                            </h5>
-                                            <div class="tags colorbg mt-15">
-                                                <a href="#0">Marketing</a>
-                                                <a href="#0">Design</a>
-                                            </div>
+                                            <h6 class="line-height-1">Megan fox</h6>
+                                            <span class="fz-12 ls1 text-u mb-15">14 sept 2021, 07:00 AM</span>
+                                            <p class="fz-14">Ut elementum turpis lorem, id vulputate risus consequat vitae. Morbi eget
+                                                urna imperdiet, pellentesque nulla id, tempus mauris.</p>
                                         </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 d-flex align-items-center">
+                                    <div class="replay-post ml-auto">
+                                        <a href="#0">
+                                            <span>Replay</span>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -295,128 +502,188 @@
                     </div>
                 </div>
             </div>
+        </div>
 
-            <div class="comments-post section-padding">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-11">
-                            <div class="text mb-60">
-                                <h3>Comments</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row justify-content-center">
-                        <div class="col-lg-11">
-                            <div class="item-box">
-                                <div class="row">
-                                    <div class="col-lg-9">
-                                        <div class="flex">
-                                            <div class="user-img mr-30">
-                                                <div class="img circle-80 line-height-1">
-                                                    <img src="/front/assets/imgs/blog/author1.jpg" alt="" class="circle-img">
-                                                </div>
-                                            </div>
-                                            <div class="cont">
-                                                <h6 class="line-height-1">Megan fox</h6>
-                                                <span class="fz-12 ls1 text-u mb-15">14 sept 2021, 07:00 AM</span>
-                                                <p class="fz-14">Ut elementum turpis lorem, id vulputate risus consequat vitae. Morbi eget
-                                                    urna imperdiet, pellentesque nulla id, tempus mauris.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 d-flex align-items-center">
-                                        <div class="replay-post ml-auto">
-                                            <a href="#0">
-                                                <span>Replay</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item-box replayed">
-                                <div class="row">
-                                    <div class="col-lg-9">
-                                        <div class="flex">
-                                            <div class="user-img mr-30">
-                                                <div class="img circle-80 line-height-1">
-                                                    <img src="/front/assets/imgs/blog/author1.jpg" alt="" class="circle-img">
-                                                </div>
-                                            </div>
-                                            <div class="cont">
-                                                <h6 class="line-height-1">Megan fox</h6>
-                                                <span class="fz-12 ls1 text-u mb-15">14 sept 2021, 07:00 AM</span>
-                                                <p class="fz-14">Ut elementum turpis lorem, id vulputate risus consequat vitae. Morbi eget
-                                                    urna imperdiet, pellentesque nulla id, tempus mauris.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 d-flex align-items-center">
-                                        <div class="replay-post ml-auto">
-                                            <a href="#0">
-                                                <span>Replay</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+        <div class="comments-from section-padding sub-bg">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-11">
+                        <div class="text mb-60">
+                            <h3>Leave a comment</h3>
                         </div>
                     </div>
                 </div>
-            </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-11">
+                        <form id="contact-form" method="post" action="contact.php">
 
-            <div class="comments-from section-padding sub-bg">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-11">
-                            <div class="text mb-60">
-                                <h3>Leave a comment</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row justify-content-center">
-                        <div class="col-lg-11">
-                            <form id="contact-form" method="post" action="contact.php">
+                            <div class="messages"></div>
 
-                                <div class="messages"></div>
+                            <div class="controls row">
 
-                                <div class="controls row">
-
-                                    <div class="col-lg-6">
-                                        <div class="form-group mb-30">
-                                            <input id="form_name" type="text" name="name" placeholder="Name" required="required">
-                                        </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group mb-30">
+                                        <input id="form_name" type="text" name="name" placeholder="Name" required="required">
                                     </div>
+                                </div>
 
-                                    <div class="col-lg-6">
-                                        <div class="form-group mb-30">
-                                            <input id="form_email" type="email" name="email" placeholder="Email" required="required">
-                                        </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group mb-30">
+                                        <input id="form_email" type="email" name="email" placeholder="Email" required="required">
                                     </div>
+                                </div>
 
-                                    <div class="col-12">
-                                        <div class="form-group mb-30">
-                                            <textarea id="form_message" name="message" placeholder="Message" rows="4" required="required"></textarea>
-                                        </div>
+                                <div class="col-12">
+                                    <div class="form-group mb-30">
+                                        <textarea id="form_message" name="message" placeholder="Message" rows="4" required="required"></textarea>
                                     </div>
+                                </div>
 
-                                    <div class="col-12 text-center mt-20">
-                                        <button type="submit" class="butn-circle">
+                                <div class="col-12 text-center mt-20">
+                                    <button type="submit" class="butn-circle">
                                             <span class="full-width">
                                                 <span class="full-width">Post A <br> Comment</span>
                                             </span>
-                                            <img src="/front/assets/imgs/svg-assets/circle-star.svg" alt="" class="circle-star">
-                                        </button>
-                                    </div>
+                                        <img src="assets/imgs/svg-assets/circle-star.svg" alt="" class="circle-star">
+                                    </button>
                                 </div>
-                            </form>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== End Blog ==================== -->
+
+
+</main>
+
+
+<!-- ==================== Start Footer ==================== -->
+
+<footer class="sub-bg">
+    <div class="footer-container">
+        <div class="container pb-80 pt-80 ontop">
+            <div class="call-box text-center mb-80">
+                <h2>
+                    <a href="page-contact.html">Let's <span class="stroke"> Discuss</span></a>
+                    <span class="arrow">
+                            <svg width="18" height="18" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.922 4.5V11.8125C13.922 11.9244 13.8776 12.0317 13.7985 12.1108C13.7193 12.1899 13.612 12.2344 13.5002 12.2344C13.3883 12.2344 13.281 12.1899 13.2018 12.1108C13.1227 12.0317 13.0783 11.9244 13.0783 11.8125V5.51953L4.79547 13.7953C4.71715 13.8736 4.61092 13.9176 4.50015 13.9176C4.38939 13.9176 4.28316 13.8736 4.20484 13.7953C4.12652 13.717 4.08252 13.6108 4.08252 13.5C4.08252 13.3892 4.12652 13.283 4.20484 13.2047L12.4806 4.92188H6.18765C6.07577 4.92188 5.96846 4.87743 5.88934 4.79831C5.81023 4.71919 5.76578 4.61189 5.76578 4.5C5.76578 4.38811 5.81023 4.28081 5.88934 4.20169C5.96846 4.12257 6.07577 4.07813 6.18765 4.07812H13.5002C13.612 4.07813 13.7193 4.12257 13.7985 4.20169C13.8776 4.28081 13.922 4.38811 13.922 4.5Z" fill="currentColor"></path>
+                            </svg>
+                        </span>
+                </h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="colum md-mb50">
+                        <div class="tit mb-20">
+                            <h6>Address</h6>
+                        </div>
+                        <div class="text">
+                            <p>st. Chilanzar 2/2, Tashkent, Uzbekistan</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 offset-lg-1">
+                    <div class="colum md-mb50">
+                        <div class="tit mb-20">
+                            <h6>Say Hello</h6>
+                        </div>
+                        <div class="text">
+                            <p class="mb-10">
+                                <a href="#0">hello@design.com</a>
+                            </p>
+                            <h5>
+                                <a href="#">998 (93) 512 53 24</a>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 md-mb50">
+                    <div class="tit mb-20">
+                        <h6>Social</h6>
+                    </div>
+                    <ul class="rest social-text">
+                        <li>
+                            <a href="https://www.facebook.com/doradev.uz">Facebook</a>
+                        </li>
+                        <li>
+                            <a href="https://instagram.com/dora.uz">Instagram</a>
+                        </li>
+                        <li>
+                            <a href="https://t.me/dora_support">Telegram</a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/company/dora-holding/">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <div class="tit mb-20">
+                        <h6>Newsletter</h6>
+                    </div>
+                    <div class="subscribe">
+                        <form action="contact.php">
+                            <div class="form-group rest">
+                                <input type="email" placeholder="Type Your Email">
+                                <button type="submit">
+                                    <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sub-footer pt-40 pb-40 bord-thin-top ontop">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="assets/imgs/logo-dark.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="copyright d-flex">
+                            <div class="ml-auto">
+                                <p class="fz-13">DORA® | International Marketing Company</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </div>
+</footer>
 
-        <!-- ==================== End Blog ==================== -->
+<!-- ==================== End Footer ==================== -->
 
 
-    </main>
-</x-layouts.main>
+
+
+
+
+
+
+
+
+<!-- jQuery -->
+<script src="assets/js/jquery-3.6.0.min.js"></script>
+<script src="assets/js/jquery-migrate-3.4.0.min.js"></script>
+
+<!-- plugins -->
+<script src="assets/js/plugins.js"></script>
+
+<script src="assets/js/ScrollTrigger.min.js"></script>
+
+<!-- custom scripts -->
+<script src="assets/js/scripts.js"></script>
+
+</body>
+
+</html>

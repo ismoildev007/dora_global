@@ -65,7 +65,7 @@ class ServiceController extends Controller
     public function edit(Service $service)
     {
         $categories = Category::all(); // Need to pass categories to the view
-        return view('admin.information.edit', compact('service', 'categories'));
+        return view('admin.service.edit', compact('service', 'categories'));
     }
 
 
